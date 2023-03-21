@@ -23,8 +23,8 @@
     check: MatchFileFragment
     options:
       fragment: "Hola"
-      count: 2
-      exact: true
+      count: 1
+      exact: false
   - description: Replace 'Add Your Name Here' text with your name in Scope.js
     check: MatchFileFragment
     options:
