@@ -1,4 +1,4 @@
-- src/Scope.js
+- src/Scope.js:
   - description: Ensure that the Scope.js file exists in the src/ directory
     check: ConfirmFileExists
   - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Scope.js
@@ -31,7 +31,7 @@
       fragment: "Add Your Name Here"
       count: 0
       exact: true
-- src/Stack1.java
+- src/Stack1.java:
   - description: Ensure that the Stack1.java file exists in the src/ directory
     check: ConfirmFileExists
   - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Stack1.java
@@ -52,7 +52,7 @@
       fragment: "Add Your Name Here"
       count: 0
       exact: true
-- src/Stack2.java
+- src/Stack2.java:
   - description: Ensure that the Stack2.java file exists in the src/ directory
     check: ConfirmFileExists
   - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Stack2.java
