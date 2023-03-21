@@ -1,0 +1,115 @@
+- src/Scope.js
+  - description: Ensure that the Scope.js file exists in the src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Scope.js
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of single-line comments in Scope.js
+    check: CountSingleLineComments
+    options:
+      language: "Java"
+      count: 3
+      exact: false
+  - description: Add correct 'hola()' method in Scope.js program
+    check: MatchFileFragment
+    options:
+      fragment: "hola()"
+      count: 2
+      exact: true
+  - description: Add correct 'Hola' String literal in Scope.js program
+    check: MatchFileFragment
+    options:
+      fragment: "Hola"
+      count: 2
+      exact: true
+  - description: Replace 'Add Your Name Here' text with your name in Scope.js
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+- src/Stack1.java
+  - description: Ensure that the Stack1.java file exists in the src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Stack1.java
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of Javadoc (i.e., multiple-line) comments in Stack1.java
+    check: CountMultipleLineComments
+    options:
+      language: "Java"
+      count: 2
+      exact: false
+  - description: Replace 'Add Your Name Here' text with your name in Stack1.java
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+- src/Stack2.java
+  - description: Ensure that the Stack2.java file exists in the src/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for Stack2.java
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create a sufficient number of Javadoc (i.e., multiple-line) comments in Stack2.java
+    check: CountMultipleLineComments
+    options:
+      language: "Java"
+      count: 2
+      exact: false
+  - description: Replace 'Add Your Name Here' text with your name in Stack2.java
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+
+# --> check the technical writing for various characteristics
+- writing/report.md:
+  - description: Ensure that the report.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for report.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the reflection file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Write a minimum number of meaningful words in the reflection
+    check: CountFileWords
+    options:
+      count: 800
+      exact: false
+  - description: Confirm that the markdown file has the correct number of headers
+    check: CountMarkdownTags
+    options:
+      tag: heading
+      count: 7
+      exact: true
+  - description: Confirm that the markdown file has the correct number of code blocks
+    check: CountMarkdownTags
+    options:
+      tag: code
+      count: 6
+      exact: false
+
+# confirm a suitable number of commit messages
+- description: Have at least a specific minimum of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
