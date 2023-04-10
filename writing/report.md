@@ -122,7 +122,7 @@ In the following diagram, each picture shows the stack contents after the execut
 
 _Question_: 4.2\. Now add the `print` statement that displays the value of `num`. Describe the changes to the stack that occur as a result of this addition.
 
-Answer Answer Answer Answer Answer Answer Answer Answer Answer
+After adding the print statement, the stack will contain other items for the invoking of the print method. Specifically, it will contain `iload_3` to retrieve the result stored in location 3 of the memory before it gets printed out.
 
 ### Reflection
 
